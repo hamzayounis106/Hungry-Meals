@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Syne&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Syne', sans-serif !important;
+    box-sizing: border-box;
+}
+
+.headerStyle {
+    background-color: #ff6f00;
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+    position: fixed;
+    /* Make the header fixed at the top */
+    width: 100%;
+    /* Take up the full width of the viewport */
+    top: 0;
+    /* Stick to the top */
+    z-index: 1000;
+    /* Set a higher z-index to ensure it appears above other elements */
+}
+
+.logoStyle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right: 30px;
+    width: 50%;
+    font-size: 27px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.navStyle {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navStyle a {
+    margin: 0px 8px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navStyle a:hover {
+    background-color: #ff3d00;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+body {
+    padding-top: 80px;
+}
+
+.heroStyle {
+    background-image: url('https://images.unsplash.com/photo-1494859802809-d069c3b71a8a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 500px;
+    /* Adjust the height as needed */
+    display: flex;
+    flex-direction: column;
+    margin-top: -5px;
+    justify-content: center;
+    align-items: self-start;
+}
+
+.hero_stufff {
+    margin-left: 30px;
+    text-align: start;
+    width: 70vw;
+}
+
+
+.headingStyle,
+.paragraphStyle,
+.buttonStyle {
+    color: #252525;
+    text-align: start;
+}
+
+.headingStyle {
+    font-size: 4rem;
+    margin-bottom: 16px;
+}
+
+.paragraphStyle {
+    font-size: 2rem;
+    margin-bottom: 24px;
+}
+
+.buttonStyle {
+    background-color: #ff6f00;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.buttonStyle:hover {
+    background-color: #ff3d00;
+}
+
+/* Main component css  */
+
+
+
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    align-self: center;
+    justify-content: center;
+    justify-content: center;
+}
+
+.category-item {
+    width: 300px;
+    margin: 20px;
+    /* padding: 20px; */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.category-item:hover {
+    transform: scale(1.05);
+}
+
+.category-image {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.category-title {
+    margin-top: 16px;
+    font-size: 1.5rem;
+    color: #252525;
+    cursor: pointer;
+}
+
+.category-description {
+    margin-top: 8px;
+    font-size: 1rem;
+    color: #777;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.Menu_into {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.Menu_into h2 {
+    margin-top: 40px;
+    text-align: center;
+    width: 60vw;
+    margin-bottom: 20px;
+    line-height: 24px;
+    align-self: center;
+    justify-self: center;
+    font-size: 34px;
+    color: #252525;
+}
+
+.Menu_into p {
+
+    margin-bottom: 40px;
+    text-align: center;
+    width: 60vw;
+    line-height: 24px;
+    align-self: center;
+    font-size: 18px;
+    justify-self: center;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.catergory_data {
+    background-color: rgb(228, 236, 185);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* margin-bottom: 16px; */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-column h3 {
+    font-size: 1.5rem;
+    color: #ff6f00;
+    margin-bottom: 16px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.social-icons svg {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.footer-column p {
+    margin-bottom: 16px;
+    width: 70vw;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.footer-column p:last-child {
+    margin-bottom: 0;
+}
+
+.footer-column p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column p a:hover {
+    text-decoration: underline;
+}
+
+.social-icons li {
+    list-style: none;
+    transition: transform 0.5s ease-in-out, color 0.5s ease-in-out;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.social-icons svg:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+    color: #ff6f00;
+}
+
+.meals-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.sub-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.meal-item {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.meal-item:hover {
+    transform: scale(1.05);
+}
+
+.meal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.meal-title {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.meal-id {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #888;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6f00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #ff3d00;
+}
+
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+.recipe-details {
+    display: flex;
+    padding-left: 40px;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* text-align: center; */
+    margin-bottom: 40px;
+}
+
+.recipe-title {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6f00;
+}
+
+.recipe-image {
+    width: 40vw;
+    border-radius: 5px;
+    height: 40vh;
+    margin-top: 20px;
+}
+
+.ingredients-title {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff6f00;
+}
+
+.ingredients-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.ingredient {
+    margin-bottom: 5px;
+    font-size: 16px;
+    
+    color: #888;
+}
+
+.instructions-title {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff6f00;
+}
+
+.instructions {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #888;
+    width: 80vw;
+}
+
+.video-title {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff6f00;
+}
+
+.video-link {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #888;
+    text-decoration: none;
+}
+
+.video-link:hover {
+    text-decoration: underline;
+}
