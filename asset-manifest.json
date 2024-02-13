@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Hungry-Meals/static/css/main.44730c6c.css",
-    "main.js": "/Hungry-Meals/static/js/main.2c9a3c10.js",
+    "main.js": "/Hungry-Meals/static/js/main.1d38589b.js",
     "index.html": "/Hungry-Meals/index.html",
     "main.44730c6c.css.map": "/Hungry-Meals/static/css/main.44730c6c.css.map",
-    "main.2c9a3c10.js.map": "/Hungry-Meals/static/js/main.2c9a3c10.js.map"
+    "main.1d38589b.js.map": "/Hungry-Meals/static/js/main.1d38589b.js.map"
   },
   "entrypoints": [
     "static/css/main.44730c6c.css",
-    "static/js/main.2c9a3c10.js"
+    "static/js/main.1d38589b.js"
   ]
 }
