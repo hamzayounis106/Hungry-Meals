@@ -1,17 +1,20 @@
 import "./style.css";
+import { Link } from "react-router-dom";
+
 function NavBar() {
   return (
-    <>
+   
       <header className="headerStyle">
         <div className="logoStyle">Hungry Meal</div>
         <nav className="navStyle">
-          <a href="src\Hero.js">Home</a>
-          <a href="src\Main.js">Categories</a>
-          <a href="/about">About</a>
-          <a href="/contact">Contact</a>
+          <Link to="/">Home</Link>
+          <Link to="/main" className="linkStyle">Categories</Link>
+
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link>
         </nav>
       </header>
-    </>
+  
   );
 }
 

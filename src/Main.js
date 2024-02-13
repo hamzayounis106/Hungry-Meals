@@ -69,7 +69,7 @@ function Main() {
         </p>
       </div>
 
-      <div className="data_list_section">
+      <div className="data_list_section"  id="main">
         {data ? (
           data.map(
             ({
