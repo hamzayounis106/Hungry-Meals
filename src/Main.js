@@ -43,6 +43,7 @@ function Main() {
   function handleGoBack() {
     setData(originalData); // Restore original data
     setList([]); // Clear list
+    setSelectedRecipeId(null);
     scrollToMenu();
   }
 
