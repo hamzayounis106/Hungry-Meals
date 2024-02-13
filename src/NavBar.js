@@ -7,7 +7,7 @@ function NavBar() {
       <header className="headerStyle">
         <div className="logoStyle">Hungry Meal</div>
         <nav className="navStyle">
-          <Link to="/">Home</Link>
+          <Link to="/Hungry-Meals">Home</Link>
           <Link to="/main" className="linkStyle">Categories</Link>
 
           <Link to="/about">About</Link>
