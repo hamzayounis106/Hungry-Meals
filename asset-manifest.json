@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Hungry-Meals/static/css/main.44730c6c.css",
+    "main.js": "/Hungry-Meals/static/js/main.ffea8ae4.js",
+    "index.html": "/Hungry-Meals/index.html",
+    "main.44730c6c.css.map": "/Hungry-Meals/static/css/main.44730c6c.css.map",
+    "main.ffea8ae4.js.map": "/Hungry-Meals/static/js/main.ffea8ae4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.44730c6c.css",
+    "static/js/main.ffea8ae4.js"
+  ]
+}
