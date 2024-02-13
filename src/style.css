@@ -75,7 +75,7 @@ body {
 }
 
 .heroStyle {
-    background-image: url('https://images.unsplash.com/photo-1494859802809-d069c3b71a8a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    /* background-image: url('https://images.unsplash.com/photo-1494859802809-d069c3b71a8a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -349,13 +349,14 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
 .meal-item {
     width: 300px;
     margin: 20px;
+    
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -491,4 +492,20 @@ button:hover {
 
 .video-link:hover {
     text-decoration: underline;
+}
+.data_list_section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.meals_list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+}
+.meal-item{
+    cursor: pointer;
 }

@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import './style.css';
-function RecipeDetails() {
+function RecipeDetails({idMeal}) {
     const [recipe, setRecipe] = useState(null);
 
     useEffect(() => {
         const fetchRecipe = async () => {
             try {
                 const response = await axios.get(
-                    "https://www.themealdb.com/api/json/v1/1/lookup.php?i=52939"
+                   `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}`
                 );
                 setRecipe(response.data.meals[0]);
             } catch (error) {
