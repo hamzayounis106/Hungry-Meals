@@ -509,3 +509,23 @@ button:hover {
 .meal-item{
     cursor: pointer;
 }
+.about_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.animation_div{
+    max-width: 400px;
+    width: 100%;
+}
+.about_text_div{
+    max-width: 80vw;
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+.about_text_div h2{
+    margin-bottom: 1rem;
+
+}
